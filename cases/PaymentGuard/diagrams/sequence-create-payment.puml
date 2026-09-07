@@ -1,0 +1,35 @@
+@startuml
+title Создание платёжного поручения
+actor MAKER
+participant "Web / API client" as client
+participant "PaymentGuard API" as api
+participant "Payment Service" as service
+database "Database" as db
+queue "Kafka (target)" as kafka
+MAKER -> client : заполнить поручение
+client -> api : POST /api/v1/payments\nIdempotency-Key
+api -> service : create(command, actor, key)
+service -> db : find by idempotency key
+alt повтор ключа
+  db --> service : existing payment
+  service --> api : existing, created=false
+  api --> client : 200 Payment
+else новая команда
+  service -> service : validate requisites\nassess risk / route
+  service -> db : BEGIN IMMEDIATE
+  service -> db : check account, balance, daily limit
+  alt правило нарушено
+    service -> db : ROLLBACK
+    service --> api : DomainError
+    api --> client : 400/404/409 Error
+  else команда валидна
+    service -> db : INSERT payment
+    service -> db : INSERT outbox event
+    service -> db : COMMIT
+    service --> api : payment, created=true
+    api --> client : 201 Payment
+    ... отдельный publisher в target architecture ...
+    db -> kafka : payment.created
+  end
+end
+@enduml
