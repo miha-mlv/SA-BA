@@ -10,4 +10,6 @@
 
 
 ## Sequence-create-payment
+<img width="1632" height="1680" alt="payment-sequence" src="https://github.com/user-attachments/assets/3e73baf0-e3d4-428c-b954-71621d3b9193" />
+
 
