@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36" version="29.6.0">
+  <diagram name="Страница-1" id="g8zOrWi_HgZyYCDk7Aj_">
+    <mxGraphModel dx="1958" dy="1111" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JJpaig0jdQRE7qJveOBg-6" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="Mobile App" vertex="1">
+          <mxGeometry height="290" width="200" x="760" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-7" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="External" vertex="1">
+          <mxGeometry height="260" width="190" x="430" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-28" edge="1" parent="1" source="JJpaig0jdQRE7qJveOBg-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;" target="JJpaig0jdQRE7qJveOBg-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1120" y="710" />
+              <mxPoint x="720" y="710" />
+              <mxPoint x="720" y="635" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-29" connectable="0" parent="JJpaig0jdQRE7qJveOBg-28" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Push payload" vertex="1">
+          <mxGeometry relative="1" x="-0.1778" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-8" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="Backend" vertex="1">
+          <mxGeometry height="290" width="200" x="1120" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-9" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Yandex MapKit SDK" vertex="1">
+          <mxGeometry height="50" width="100" x="800" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-10" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="WebSocket Client" vertex="1">
+          <mxGeometry height="50" width="100" x="800" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-11" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Firebase Messaging Service" vertex="1">
+          <mxGeometry height="50" width="100" x="800" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-12" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Spring Security" vertex="1">
+          <mxGeometry height="50" width="100" x="1160" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-13" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="REST Controllers" vertex="1">
+          <mxGeometry height="50" width="100" x="1160" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-14" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="WebSocket Handler" vertex="1">
+          <mxGeometry height="50" width="100" x="1160" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-16" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="PostgreSQL" vertex="1">
+          <mxGeometry height="100" width="80" x="1180" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-20" edge="1" parent="1" source="JJpaig0jdQRE7qJveOBg-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;curved=1;" target="JJpaig0jdQRE7qJveOBg-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-21" connectable="0" parent="JJpaig0jdQRE7qJveOBg-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Tile data/Geocoding" vertex="1">
+          <mxGeometry relative="1" x="0.2493" y="4" as="geometry">
+            <mxPoint x="15" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-17" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Yandex Maps Api&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap-mode: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20parent%3D%221%22%20style%3D%22shape%3Dmodule%3Balign%3Dleft%3BspacingLeft%3D20%3Balign%3Dcenter%3BverticalAlign%3Dtop%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20value%3D%22WebSocket%20Client%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%2250%22%20width%3D%22100%22%20x%3D%22310%22%20y%3D%22470%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="460" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-18" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Firebase Cloud Messaging" vertex="1">
+          <mxGeometry height="50" width="100" x="460" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-22" edge="1" parent="1" source="JJpaig0jdQRE7qJveOBg-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=140;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=150;entryDy=200;entryPerimeter=0;curved=1;startArrow=classic;startFill=1;" target="JJpaig0jdQRE7qJveOBg-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-23" connectable="0" parent="JJpaig0jdQRE7qJveOBg-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="HTTP/JSON/WebSocket" vertex="1">
+          <mxGeometry relative="1" x="-0.1775" as="geometry">
+            <mxPoint x="10" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-24" edge="1" parent="1" source="JJpaig0jdQRE7qJveOBg-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=290;exitDy=105;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;startArrow=classic;startFill=1;" target="JJpaig0jdQRE7qJveOBg-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-26" connectable="0" parent="JJpaig0jdQRE7qJveOBg-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px; text-wrap-mode: wrap; background-color: rgb(236, 236, 236);&quot;&gt;JDBC/SQL&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0199" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-32" edge="1" parent="1" source="JJpaig0jdQRE7qJveOBg-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=150;entryDy=200;entryPerimeter=0;curved=1;" target="JJpaig0jdQRE7qJveOBg-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JJpaig0jdQRE7qJveOBg-33" connectable="0" parent="JJpaig0jdQRE7qJveOBg-32" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Push notification" vertex="1">
+          <mxGeometry relative="1" x="-0.078" as="geometry">
+            <mxPoint x="10" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
